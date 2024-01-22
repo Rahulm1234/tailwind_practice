@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home page- a webpage dev. class</title>
+  </head>
+  <body class="bg-white">
+    <!-- Navbar for the web which is starts from here -->
+    <nav id="Navbar"
+      class="w-full h-14 bg-indigo-300 flex justify-between px-4 items-center md:px-4">
+      <!-- For making logo -->
+      <div class="text-2xl text-indigo-700 font-bold uppercase">
+        <a href="">Webelight</a>
+      </div>
+      <!-- for making navbar menu(ul/li), which have medium size flex and for small size hidden the menu-->
+      <ul class="md:flex hidden font-semibold text-white">
+        <li class="mx-[10px] cursor-pointer uppercase"><a href="">Home</a></li>
+        <li class="mx-[10px] cursor-pointer uppercase">
+          <a href="#Services">Services</a>
+        </li>
+        <li class="mx-[10px] cursor-pointer uppercase">
+          <a href="#Technologies">Technologies</a>
+        </li>
+      </ul>
+      <!-- for making Login/Sign up Button which has hidden class when it goes to the Smaller window otherwise it can preview the button -->
+
+      <!-- for toggle switch -->
+      <div class="flex gap-20">
+        <div class="flex items-center">
+          <label
+            for="check"
+            class="bg-indigo-400 cursor-pointer relative w-20 h-8 rounded-full">
+            <input type="checkbox" id="check" class="sr-only peer" />
+            <span
+              class="w-8 h-8 bg-yellow-400 absolute rounded-full peer-checked:bg-slate-500 peer-checked:left-12 duration-300"></span>
+          </label>
+        </div>
+
+        <!-- Toggle Switch Ends here -->
+
+        <div
+          class="hidden md:block uppercase font-semibold px-2 py-2 bg-indigo-700 text-white rounded-3xl cursor-pointer">
+          Login/SignUp
+        </div>
+      </div>
+      <!-- for making login/signup icon when window is small or smaller-->
+      <div class="md:hidden">
+        <!-- using Anchor tag create a icon-->
+        <a class="text-6xl" href="#">&#8801;</a>
+      </div>
+    </nav>
+    <!-- Complete Navbar here-->
+
+    <!-- Hero Section/Image Section starts here-->
+    <header class="w-full h-auto">
+      <img
+        class="w-full hidden md:block"
+        src="https://img.freepik.com/free-vector/flat-design-ui-ux-background_23-2149093996.jpg?w=1060&t=st=1705566565~exp=1705567165~hmac=80c71eb62f40f7437a82e5d7042538b04eff7baf58ab837c83cbcd70fde13d97"
+        alt=""
+      />
+      <img
+        class="w-full md:hidden"
+        src="https://img.freepik.com/free-vector/flat-design-ui-ux-background_23-2149093996.jpg?w=1060&t=st=1705566565~exp=1705567165~hmac=80c71eb62f40f7437a82e5d7042538b04eff7baf58ab837c83cbcd70fde13d97"
+        alt=""
+      />
+    </header>
+    <!-- Hero Section/ Image Section ends here -->
+
+    <!--new Section for Cards-->
+    <div
+      id="Services"
+      class="h-auto w-100 flex flex-wrap flex-col items-center p-10 text-center"
+    >
+      <div class="w-full h-auto flex flex-wrap flex-col items-center">
+        <p class="text-indigo-800 font-bold text-3xl md:text-4xl text-center">
+          Services
+        </p>
+        <div
+          class="w-36 h-1 border-b-4 border-yellow-400 mt-2 rounded-2xl md:mt-4 mb-12"
+        ></div>
+      </div>
+      <!--Cards Section Start here over here -->
+      <div class="w-full flex flex-wrap justify-evenly">
+        <!-- Card-1 for Software Development Card -->
+        <div class="w-64 flex flex-col items-center mb-12">
+          <img class="w-24 mx-24" src="../Res/desktop.png" alt="" />
+          <p class="text-2xl font-bold text-white mt-1">
+            Custom Software Development
+          </p>
+          <p class="text-xl font-semibold text-gray-500 mt-2">
+            Tailored software solutions designed to meet unique business
+            requirements, enhancing efficiency and fostering organizational
+            growth.
+          </p>
+        </div>
+        <!-- Car-2 for Mobile App Development Card -->
+        <div class="w-64 flex flex-col items-center mb-12">
+          <img class="w-24 mx-24" src="../Res/app-settings.png" alt="" />
+          <p class="text-2xl font-bold text-white mt-1">
+            Mobile App Development
+          </p>
+          <p class="text-xl font-semibold text-gray-500 mt-2">
+            Innovative mobile app creation, delivering user-friendly experiences
+            that align with client objectives and industry standards.
+          </p>
+        </div>
+        <!-- Card-3 for Data and Artificial Intelligence -->
+        <div class="w-64 flex flex-col items-center mb-12">
+          <img class="w-24 mx-24" src="../Res/intelligence.png" alt="" />
+          <p class="text-2xl font-bold text-white mt-1">
+            Data and Artificial Intelligence
+          </p>
+          <p class="text-xl font-semibold text-gray-500 mt-2">
+            Harnessing data insights and AI capabilities to empower businesses,
+            drive informed decisions, and optimize operational processes
+            effectively.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Card Section Ends Here -->
+
+    <!-- Technology Card Section Starts Here -->
+    <div
+      id="Technologies"
+      class="h-auto w-100 flex flex-wrap flex-col items-center p-10 text-center">
+      <div class="w-full h-auto flex flex-wrap flex-col items-center">
+        <p class="text-indigo-800 font-bold text-3xl md:text-4xl text-center">
+          Technologies
+        </p>
+        <div
+          class="w-36 h-1 border-b-4 border-yellow-400 mt-2 rounded-2xl md:mt-4 mb-12"
+        ></div>
+      </div>
+      <div class="w-[90%] h-auto flex flex-wrap justify-around">
+        <!-- div for Card -->
+
+        <!-- Card 1 HTML5 With Border -->
+        <div
+          class="w-64 flex flex-col items-center mb-12 border-white border-2 rounded-xl p-2"
+        >
+          <img src="../Res/html5.png" alt="HTML5 logo" />
+          <p class="text-2xl font-bold text-white mt-1">HTML5</p>
+          <p class="text-xl font-semibold text-gray-500 mt-2">
+            HTML (HyperText Markup Language) is the most basic building block of
+            the Web. It defines the meaning and structure of web content.Other
+            technologies besides HTML are generally used to describe a web
+            page's presentation(CSS) or behavior(JavaScript).
+          </p>
+        </div>
+
+        <!-- Card 2 for ReactJS -->
+        <div class="w-64 flex flex-col items-center mb-12 p-2">
+          <img src="../Res/react-js-icon.png" alt="ReactJS logo" />
+          <p class="text-2xl font-bold text-white mt-1">ReactJS</p>
+          <p class="text-xl font-semibold text-gray-500 mt-2">
+            React (also known as React.js or ReactJS) is a free and open-source
+            front-end JavaScript library for building user interfaces based on
+            components. It is maintained by Meta (formerly Facebook) and a
+            community of individual developers and companies. React.
+          </p>
+        </div>
+
+        <!-- Card 3 for NodeJS -->
+        <div class="w-64 flex flex-col items-center mb-12 p-2">
+          <img src="../Res/3d.png" alt="Nodejs logo" />
+          <p class="text-2xl font-bold text-white mt-1">NodeJS</p>
+          <p class="text-xl font-semibold text-gray-500 mt-2">
+            Node. js (Node) is an Open Source, cross-platform runtime
+            environment for executing JavaScript code. Node is used extensively
+            for server-side programming, making it possible for developers to
+            use JavaScript for client-side and server-side code without needing
+            to learn an additional language.
+          </p>
+        </div>
+
+        <!-- Card 4 for Firbase -->
+        <div class="w-64 flex flex-col items-center mb-12 p-2">
+          <img
+            class="w-56"
+            src="../Res/icons8-firebase-a-google's-mobile-platform-that-helps-you-quickly-develop-high-quality-apps-96.png"
+            alt="Firebase logo"
+          />
+          <p class="text-2xl font-bold text-white mt-1">Firebase</p>
+          <p class="text-xl font-semibold text-gray-500 mt-2">
+            Firebase gives mobile developers access to a complete range of fully
+            managed mobile-centric services including analytics, authentication
+            and Realtime Database. Cloud Functions rounds out the offering by
+            providing a way to extend and connect the behavior of Firebase
+            features through the addition of server-side code.
+          </p>
+        </div>
+        <!-- Card 5 for Python -->
+        <div class="w-64 flex flex-col items-center mb-12 p-2">
+          <img src="../Res/python.png" alt="Python logo" />
+          <p class="text-2xl font-bold text-white mt-1">python</p>
+          <p class="text-xl font-semibold text-gray-500 mt-2">
+            Python is an interpreted, object-oriented, high-level programming
+            language with dynamic semantics developed by Guido van Rossum. It
+            was originally released in 1991. Designed to be easy as well as fun,
+            the name "Python" is a nod to the British comedy group Monty Python.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technology Card Section Ends here -->
+
+    <!-- Footer Starts From here -->
+
+    <footer
+      class="w-full bg-gray-900 px-4 text-white pt-8 flex flex-col md:flex-row flex-wrap justify-between md:px-20 py-24"
+    >
+      <!-- For Logo and tel-email Link -->
+      <div>
+        <a href="#Navbar"
+          ><img
+            class="w-40 h-16"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWcAAACMCAMAAACXkphKAAAAxlBMVEX///88RVtIjss3QVgzPVUuOVI/ism/1uycn6i8vsSnqrFmbX5EjMo5Qlmytb7Gx8xhaHpvdIP29vcwhMdQlM6Okpzu9PpHT2VWXnHs7O8oNE75+frNz9OdrbXm7vdpn9Lf5ObT2t12p9WoxeMjL0tzjZhBSmC9yM19gpDw8PKaqrKFmqS3w8iInabd6PTO3u+ruL9phZFMcYCuyuaIjZmMtNuWmaNZe4htiJRxpNSrx+QZJ0aSuN250ekjgMaCr9oiV2o+aHif0v5FAAAPTklEQVR4nO2ceV+rOhPHqSx2o3azLZsFpQtdtHqqHs/V43Pf/5t6MiEr0NrF9X7y+0NtCAG+TCYzSaqmKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpHage05EN3TxdEh3Z0rpFVTtjhZUaK/T3aKtx2GnvrdOrP90OkfX659dRbVlWHWSdHMm5aehEboMVVl1WWNmjrTI/7ezt2h+jmxsL6YQJPg1vDm7ulDRV7x7JuaaXiEyBs8kK9+JssNO2cG5zq58eft/FunitW/WTjOr1zuX1gQ3+ZM7M6o3B4fddpOv7jpWFTKy6c3mYTf9kzqyW/a6cvVNrA+XUf7x4BzSqOOf0lPcYMunhAaAV54y84RZjPpyV4ixrB8wI1sneFv3BnP9xif75IZx3wYxcR3df0B/LOfSZnD3a+jLOO1lzCnpPXB/L+UDtxtl7f86vO2KGwbCwgQuq7IEs515abRN0Lwyd8vohDMMkc6SQc9thasvVHcd/WFccJ+1/Ca2VtprjjC5bPn9whIsmThIKnNMGNvLbUdc7Yz456Zzmz39+tjoWJOmdk6sX+VCG858hrtgZXuXeCMApt5CrNQwD/RyUZbMt9s+lPpEt+eezqe6ahmG6bgtXbo7TWuMWPpzhnJRbcXrVfpX6xRY6o8Rk4/NL+zAtkJfPALcY9H3m7B5Cx95T3bI6z+JRifPNXxo61q3Oa9bVR9PYMPijGaZZFY5uiDdsIjHe8Esua8cw9UjTBnpaS2/iCjLncmzSz7Y5JiZdM2y7JAhf40jOV1lztrrDjSlLJzOtdNXNnT0UTF7k/Cq9P+tJasebloxSRmaLT6ftHtc9mBIhveRrA1JSxHltSrX7KeiWXsrpSM69bsaYO6hT3zx3is35WT75vqBavcNzdM7Z+9ORu4nk6ttNM/9gJd2M9uY8zTZkm05zI2d/nalurj+K8x/ZIOtWao5XRaAzmD3RmAWK1mWe80uuhwgJZrufM+aUkVvek/PazTfSH9P3luVcGuQ7UfRBnDPptkUdw3OB68hEZ7yKZdW7FmuJvivOudDnW6/0fTWLMcMI5O/FOSzqFsyP5DnbucrG+mM4Z4KNzhU70s2h+StHCRxz5/Xlxjt9OaEFzHWcSq2j4a8jTW6T6dYHgY5h8nGphHv9HpyTfh6coDzngpcy/hjO8igohhPXOfsjVkoCSY863HqXTk+/UGdDRzmRc90a3l9cPwsunVwt5HBs+7zqVNc6LzHO9+BclczZ1jPUd+FcwuFbM3ZFB2Ti3P4ozj3JD3dEi72WXXSd+NOwlUhvqG7xVQD21qybLGfkTDxSh3WUDvZDa54RjNPEIRQ6tO7szln0A7bRbw7GEtJCzoYxNqQCqBJFkc8Lx5UICo7irN2LHVmOjuU8kaYoUxcPFb06wWUJoR4LXurdDOd6h72NFwbagrQm4Q8U02eJeL9NHeZOnMNYYNqHV9auilFeEWdzWvF8yXGRe3jvvPtCtNjMsUvxHRDPXXUJZ+YjxDOYkdfxR8a5fiIsyLDYow7upcEeSG+xKtxB6jX4vBPnBw5QH5CM40zwtAWczQdcdM6LDDLn8e7zSDfMPVjZxakLMRhJYw2nb5s42GIuoiuewenjthhnFltgsWa7FxItPq3DWdj9UNuRs0CLN9XgtprnbKbeX0t4T/gwztS86n/za4DCOyDdvmwSCxtSt3F1KugXcwnY/DlnKSK8YcWnKHbmPbvPJZhcZUfOTj8bwYE8oWtkOdtszkLwUx/GmfhhFvQm0+aaphA0i6FeI3LpdYeMqKSTQs6ZeVGRcyKGUHS+QgwUduYcjtk5rjBocYPO54MsjRywK34MZ+xqvdO/KLCl1uw1Td2lWxZ6aRTNuv3UgJ4Mfz29sZy4jbPHOgPinM/gZO3OmfsDkXNlC2fmXT6a87qdK2rBBWL6pnsd2E5EB0gf/BgO5XvDrZi3c2YDLHAWgoTjOEfcE9sRv9Y2e/40zq3cwloFt2+X6J32usPhM6WEfV1qz8Mj7Fm7FOz53TiH3AOZO/qNT+M87WdL3PSKRtFmJx/fso6vy/xGvVOkvzv7ZyF2tY0Cxbv7ZwbLFez5e/iNfzLLMS3avFvN107HpzTMHbKse0vzGzj/EuMNTsfunxdoDcx24ZzUMkF3qnew50O2CMmqxufSZ5/dlN3PLYhV0iEr3WXJkkUrW00Qj+ukKSiaSuLEiGcXdnNDMyJno8wKt8TPBiMo0j+Mc8k+fvuuE5sSzoHg48qZuh6542w+WLTWR8Q5XwqlV3I+yB1HzOtEDcmIBM7cMLKcy8JA2CdskvMtecqOnNPU/6gJDkc3WsLHqpj6G5mGySxAmqDxqQxpUqTXvboWAJ1m4mmQd8ML/2hSOJY+ECgcm+NBOWLREOdc0iuOFjbgHnLzSMKQahuNKHRCvy+4/0M5l4xBq9nnN3eI1kaJ40ykmUS9JdWk6ZZORki2EMMRwpy01Xm6ZwXCfF3nntj9pbAegL12Kw866usoZzHM2nkjx7lk9qf9eF3EuSnmPKbZH4ylxcKDOcMUq23TRdqDVDVtMyR/t5vy9HYsGTTtgKzjsgU/tpx1jZ02rHpf5jijuOT+5eXlSpjoJy8oFC3HnVYq1ZJLV/QMt4a7hzTxbhs27oU5zmfycor91vzzVs7j7JpBfAxnzeUh3DQ7Aa4L+3Uc2ilj2pkFpwAz+NcXT2xBpdPLcyYZugCejqBVMSXUTdMQnpBEaNm5eb2Qs5ZdVj2CszfIcjYLIrDdhXokWeQ9y2XAtsHi0ISOkDqLJj0+bVrHCOs5AxfmRfPiexQ246HRZZTJZuyBU8Q5yS6hQJc/jLO0mpaeftT3JyIDJrt9z28VTDTY9JsyyZjeriHY+FPxNg++V4Zwrg+v88vnHb53yRlsAB3TYDnJuDQ8SBesd0dxzlfwuHE/zpUcZ3m82lfgLQx9YGcehIAuTZ0kcRp9elSXYtzLAtB1YS2Xcc7v4bPELWLOtGg2STeEnCRj0ICoaP/GWWa/jVs5MB+UxueURRpoHaq0S25cKDbMQbPEh235q2De6d8Mv7olrpxwztqrZNHW3z/yXTzEuQ0ublPInrM7M9wNnLVw6jKLsU3kd4R8sLYX59CUTc/Ya5d1Xo2tg4c8bOfHAtibWE89M/rVsa7E/OKUfH0Q8r5fXVIPfe5cZpvRvLLpMu9q60Y8yGzAfYgNOkSgo83Gxu8PNmquCV83NFy73BaxkgG/bOa/Pzhg308UXplfM8kd2ajcmDaOCjg0L+v7NssoSPV7vdfhsIu/aDh8upaTw5thKjx93XvB9erD4dVF0YyBE7UGY9R/DMMeNKe5rbmaUxvocHTcrJ3jjbiNQZNoIPWytlOetmrTdYRTXb6cTmalq/w0Fri2mvkypIfmAHZUGv1mrXH0vlwtzI/SxaLb/PK6vjk93eWrb73t1bzIP6ucnfmbLoOPRhsOFktICuL9zkxPR5esnIX7n1ikfES3wZyPc1CfIa+VmZZpsGfDseDXqvqGi051/FcWPl4tw1yLOP3sTpCvVdV923XkJvC+oWBbrlHCs0wgryHklvFX/ncCqorxxmCo/wBr9tKZA9ssDRqwU6sl7vcV5/6/UGFzq5M2jwvSP0fCTj34kospje/Zad4vUyPeuJHSiKv5hfHvJq9gkzlXfNQs0LsqmpqFzkPXpwdERJ+vhrl5kIm/ldeL0HBtSDeLwnSj9iMoIzX0DT1Sd7/dGN54KMUobcWJq2HG9vn36W9vy2vFBT1SN7/0HyFtUpI01lP4hzXTh2pyXEr/6fL8mqtnbbl2/vaJSvvKr8Ux7K+B/og6ZDz4jrb831BYfngot6boZ/XLU+3/vLzjdxEpKSm9s9Ju2RZ+Ht7K7uXHt/wdWttHAc5e7tKfjha9mcz4YUHhbFPr+96Ot5A/h5M9G9h6grfa937eTT6gCO+W6Odkpu3AeV4UYL0f5zv5c7hvOBfNt7X+dZy1W5TDLBdzFDkFC8x5haG1gwAHUxMtQhUmATUT53YJf/pBanheEIQa8IyW8DtqawF+FicIEo1yTuugo7MQtafhplYkdZqttBCOhgGuO3mEy/rBKj0DOC/ABnCdoA0nh7MInwaNBIGH7zGZ0X4w/73il5/gP6F4MYO/EefJ8otytkdHa8+1UaQlYEpRMIngwRIEfgIPuJytMLv2iMSwGPMi0LxRiN7GaNJeoQcbTSaTEX4fQQTvyRn5CYCDZ/RQncUc8ZjNQ9z2HPpM2gPad+gYcAMzhJaxPaOORS0vnE38CToZn3MHJjFZTO4mi2gVYKOYjBD7YLXyKWhsz84oSmaB1n6EFuDHcoVuAbU+h/v8mjlLf4nsTAtHWjKC21ymz3MLVFcIDnoBiJ7G+xzQ8KEWQISjMLjcttMDULN9p3mP6LN3m3LGddBrC6F94BuiliYT1pjmR6iXkGPeHbwQ7qTxSY+htsSc0U3BH9gQiIOB1qGzhb/J4wBOcvk2tAqcF0F6m3BL6f18vtCToC7vzbUVuMIo1DDnu1kQBKNJSmo1CuBTOlhjnL9xQVu7DdNGoBbQmSSEM9RFQyyU/4Y6/op4TrDjOVwOCz8zMsvwERpENTFnbRZQR4r9s8gZzl+sUs5R4Kxuo/Tq4W16AnDGdowu71HOM+L1sK0UDjCfoHk0h743WYIJR6R/3tHOBc+1EoePJbpN7FFAiACrhTk7KWdsbMRv4Hfho1CG2jPiRMMKzpk0mHJGZcQ8KeewgHMy11InlOXMLg/3DU2TweRrOa9u4S68R2xilDPEHngEwX4UTJKOTMsF6oHAZ0HcqrPIcdaw9xylox38Tn4noseZrUjfDW89zYMRFCzOXwCixNPgH9aRCIZyRhdqT24znFfgCbKcRygNYJdfaEnwGx4uTGt/Jef2//CvO3x5zPnfBD3UPJjDyIyfN5wHS+ozUQyIzGsZzLDP80ezR/L0UGOB/k7+RW2ulnMYbxaPC1ZHc2azVYJH/xWBonnRCA286JoJam+Jnc3tEnWXtHWNhMN3yJ+M5ktvEnLODrrKbBZMwCCgLCI9AlVcscs7d8sgPToPHieE82jfkPwnqo3teSVlI4ufstDzQzRJkgS7+uSRxrCJj8pGatbzfbXwJ+CcHJSuUIUoPA431VdSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSem/9H+6QcwF6yXPvAAAAAElFTkSuQmCC"
+            alt=""
+        /></a>
+        <p class="text-gray-400">
+          <a href="mailto:career@webelight.co.in"
+            >Send Email: career@webelight.co.in</a
+          >
+        </p>
+        <p class="text-gray-400">
+          <a href="tel:+91 6354794179">Contact No: +91 6354794179</a>
+        </p>
+      </div>
+
+      <!-- for footer list 1 quick links -->
+      <div>
+        <h2 class="font-bold text-xl mt-1">Quick Links</h2>
+        <div
+          class="w-32 h-1 border-b-2 border-yellow-400 rounded-2xl my-2"
+        ></div>
+        <div>
+          <p>About Us</p>
+          <p>FAQs</p>
+          <p>Privacy Policy</p>
+        </div>
+      </div>
+
+      <!-- For footer list 2 Services -->
+      <div>
+        <h2 class="font-bold text-xl mt-1"><a href="#Services">Services</a></h2>
+        <div
+          class="w-32 h-1 border-b-2 border-yellow-400 rounded-2xl my-2"
+        ></div>
+        <div>
+          <p>Software Development</p>
+          <p>Mobile App Development</p>
+          <p>Data and Artificial Intelligence</p>
+        </div>
+      </div>
+
+      <!-- For footer list 3 Technologies -->
+
+      <div>
+        <h2 class="font-bold text-xl mt-1">
+          <a href="#Technologies">Technologies</a>
+        </h2>
+        <div
+          class="w-32 h-1 border-b-2 border-yellow-400 rounded-2xl my-2"
+        ></div>
+        <div>
+          <p>HTML5</p>
+          <p>ReactJS</p>
+          <p>NodeJS</p>
+          <p>Firebase</p>
+          <p>Python</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer Ends Here -->
+
+    <!-- Adding Script for toggle switch -->
+
+    <script>
+      function dark_mode() {}
+    </script>
+  </body>
+</html>
