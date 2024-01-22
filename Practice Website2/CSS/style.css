@@ -604,12 +604,12 @@ body{
   z-index: 10;
 }
 
-.z-30{
-  z-index: 30;
-}
-
 .z-20{
   z-index: 20;
+}
+
+.z-30{
+  z-index: 30;
 }
 
 .mx-auto{
@@ -811,30 +811,6 @@ body{
 
 .gap-\[50px\]{
   gap: 50px;
-}
-
-.gap-\[24px\]{
-  gap: 24px;
-}
-
-.gap-\[\]{
-  gap: ;
-}
-
-.gap-2{
-  gap: 0.5rem;
-}
-
-.gap-1{
-  gap: 0.25rem;
-}
-
-.gap-12{
-  gap: 3rem;
-}
-
-.gap-3{
-  gap: 0.75rem;
 }
 
 .space-y-1 > :not([hidden]) ~ :not([hidden]){
@@ -1067,7 +1043,7 @@ body{
   color: rgb(142 142 142 / var(--tw-text-opacity));
 }
 
-.text-\[\#d9d9d9\]{
+.text-\[\#D9D9D9\]{
   --tw-text-opacity: 1;
   color: rgb(217 217 217 / var(--tw-text-opacity));
 }
@@ -1082,30 +1058,32 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\]{
-  color: ;
+.shadow{
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.text-\[\#\]{
-  color: #;
+.shadow-lg{
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.text-\[\#D\]{
-  color: #D;
+.shadow-md{
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.text-\[\#DDD\]{
-  --tw-text-opacity: 1;
-  color: rgb(221 221 221 / var(--tw-text-opacity));
+.shadow-primary{
+  --tw-shadow-color: #E6C744;
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
-.text-\[\#D9D9D9\]{
-  --tw-text-opacity: 1;
-  color: rgb(217 217 217 / var(--tw-text-opacity));
-}
-
-.text-\[\#D9D9D\]{
-  color: #D9D9D;
+.shadow-black{
+  --tw-shadow-color: #000;
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .transition-all{
@@ -1186,19 +1164,9 @@ body{
   outline-width: 0px;
 }
 
-.hover\:bg-black:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-primary:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(230 199 68 / var(--tw-bg-opacity));
-}
-
-.hover\:text-primary:hover{
-  --tw-text-opacity: 1;
-  color: rgb(230 199 68 / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover{
@@ -1254,28 +1222,8 @@ body{
     justify-content: space-evenly;
   }
 
-  .md\:gap-\[188px\]{
-    gap: 188px;
-  }
-
-  .md\:gap-\[415px\]{
-    gap: 415px;
-  }
-
-  .md\:gap-\[\]{
-    gap: ;
-  }
-
   .md\:gap-8{
     gap: 2rem;
-  }
-
-  .md\:gap-\[px\]{
-    gap: px;
-  }
-
-  .md\:gap-\[300px\]{
-    gap: 300px;
   }
 
   .md\:gap-\[250px\]{
@@ -1310,11 +1258,6 @@ body{
   .md\:py-\[5px\]{
     padding-top: 5px;
     padding-bottom: 5px;
-  }
-
-  .md\:px-\[\]{
-    padding-left: ;
-    padding-right: ;
   }
 
   .md\:text-2xl{
@@ -1365,14 +1308,6 @@ body{
 }
 
 @media (min-width: 1024px){
-  .lg\:gap-24{
-    gap: 6rem;
-  }
-
-  .lg\:gap-40{
-    gap: 10rem;
-  }
-
   .lg\:gap-48{
     gap: 12rem;
   }
